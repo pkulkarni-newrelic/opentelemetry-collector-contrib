@@ -1,0 +1,85 @@
+resourceMetrics:
+  - resource:
+      attributes:
+        - key: host.name
+          value:
+            stringValue: 0.0.0.0
+        - key: service.instance.id
+          value:
+            stringValue: 0.0.0.0:1433
+        - key: sqlserver.instance.name
+          value:
+            stringValue: SERVER1
+    scopeMetrics:
+      - metrics:
+          - description: Number of server role memberships per role.
+            gauge:
+              dataPoints:
+                - asInt: "15"
+                  attributes:
+                    - key: role
+                      value:
+                        stringValue: sysadmin
+                  startTimeUnixNano: "1000000"
+                  timeUnixNano: "2000000"
+            name: sqlserver.security.role_members.count
+            unit: '{memberships}'
+        scope:
+          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver
+          version: latest
+  - resource:
+      attributes:
+        - key: host.name
+          value:
+            stringValue: 0.0.0.0
+        - key: service.instance.id
+          value:
+            stringValue: 0.0.0.0:1433
+        - key: sqlserver.instance.name
+          value:
+            stringValue: SERVER1
+    scopeMetrics:
+      - metrics:
+          - description: Number of server role memberships per role.
+            gauge:
+              dataPoints:
+                - asInt: "8"
+                  attributes:
+                    - key: role
+                      value:
+                        stringValue: db_owner
+                  startTimeUnixNano: "1000000"
+                  timeUnixNano: "2000000"
+            name: sqlserver.security.role_members.count
+            unit: '{memberships}'
+        scope:
+          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver
+          version: latest
+  - resource:
+      attributes:
+        - key: host.name
+          value:
+            stringValue: 0.0.0.0
+        - key: service.instance.id
+          value:
+            stringValue: 0.0.0.0:1433
+        - key: sqlserver.instance.name
+          value:
+            stringValue: SERVER1
+    scopeMetrics:
+      - metrics:
+          - description: Number of server role memberships per role.
+            gauge:
+              dataPoints:
+                - asInt: "9"
+                  attributes:
+                    - key: role
+                      value:
+                        stringValue: db_datareader
+                  startTimeUnixNano: "1000000"
+                  timeUnixNano: "2000000"
+            name: sqlserver.security.role_members.count
+            unit: '{memberships}'
+        scope:
+          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver
+          version: latest

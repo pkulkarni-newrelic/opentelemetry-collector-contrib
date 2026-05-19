@@ -1,0 +1,20 @@
+[
+    {
+        "measurement": "sqlserver_security_role_members",
+        "sql_instance": "SERVER1",
+        "role_name": "sysadmin",
+        "role_member_count": "15"
+    },
+    {
+        "measurement": "sqlserver_security_role_members",
+        "sql_instance": "SERVER1",
+        "role_name": "db_owner",
+        "role_member_count": "8"
+    },
+    {
+        "measurement": "sqlserver_security_role_members",
+        "sql_instance": "SERVER1",
+        "role_name": "db_datareader",
+        "role_member_count": "9"
+    }
+]
